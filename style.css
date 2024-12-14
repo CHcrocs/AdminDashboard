@@ -1,29 +1,47 @@
-.home_icon{
-    width: max-content;
-}
-
-body{
+body {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
     display: grid;
     grid-template-columns: 15svw 85svw;
     grid-template-rows: 20svh 80svh;
 }
 
-header{
+header {
     grid-column: 2/2;
     grid-row: 1/1;
     background-color: aqua;
 }
 
-#sidebar{
+.search_icon{
+    width: 30px;
+}
+
+input{
+    background-color: lightgray;
+    border-radius: 20px;
+    width: 400px;
+    height: 20px;
+    border: none;
+}
+
+#sidebar {
     grid-column: 1/1;
     grid-row: 1/2;
-    background-color: brown;
+    background-color: #0ea5e9;
     height: 100svh;
 }
 
-main{
+#sidebar > p{
+    color: white;
+}
+
+.sidebar_icons {
+    width: 30px;
+    fill: white;
+}
+
+main {
     grid-column: 2/2;
     grid-row: 2/2;
     background-color: chartreuse;
