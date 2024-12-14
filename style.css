@@ -1,0 +1,30 @@
+.home_icon{
+    width: max-content;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 15svw 85svw;
+    grid-template-rows: 20svh 80svh;
+}
+
+header{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    background-color: aqua;
+}
+
+#sidebar{
+    grid-column: 1/1;
+    grid-row: 1/2;
+    background-color: brown;
+    height: 100svh;
+}
+
+main{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    background-color: chartreuse;
+}
