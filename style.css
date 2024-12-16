@@ -10,11 +10,52 @@ body {
 header {
     grid-column: 2/2;
     grid-row: 1/1;
-    background-color: aqua;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.438);
+    z-index: 1;
+    display: grid;    
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
 }
+
+.search_div{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.profile_div{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    display: flex;
+}
+
+.welcome_div{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    display: flex;
+}
+
+.buttons_div{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 .search_icon{
     width: 30px;
+}
+
+.profile_icon{
+    width: 50px;
+    fill: url(Assets/raorapf.png);
+}
+
+.welcome_profile_icon{
+    width: 50px;
+    fill: url(Assets/raorapf.png);
 }
 
 input{
@@ -44,5 +85,9 @@ input{
 main {
     grid-column: 2/2;
     grid-row: 2/2;
-    background-color: chartreuse;
+    background-color: rgb(209, 209, 209)
+}
+
+.projects_divs{
+    background-color: white;
 }
